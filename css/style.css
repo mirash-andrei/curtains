@@ -89,6 +89,9 @@ button:focus {
   background-repeat: no-repeat;
   background-position-y: center;
   height: 632px; }
+  @media (max-width: 500px) {
+    .about {
+      height: 530px; } }
   .about .label {
     margin-top: 58px;
     background: linear-gradient(90deg, #0B90BD 0%, #3FB8B1 97.69%);
@@ -344,13 +347,15 @@ button:focus {
   width: 225px;
   height: 50px;
   padding: 1px; }
-  .services-description .btn-gradient:hover div, .services-description .btn-gradient:focus div {
-    background: linear-gradient(90deg, #0B90BD 0%, #3FB8B1 97.69%); }
-    .services-description .btn-gradient:hover div span, .services-description .btn-gradient:focus div span {
-      background: white;
-      color: white;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+  .services-description .btn-gradient:hover, .services-description .btn-gradient:focus {
+    text-decoration: none; }
+    .services-description .btn-gradient:hover div, .services-description .btn-gradient:focus div {
+      background: linear-gradient(90deg, #0B90BD 0%, #3FB8B1 97.69%); }
+      .services-description .btn-gradient:hover div span, .services-description .btn-gradient:focus div span {
+        background: white;
+        color: white;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
   .services-description .btn-gradient div {
     display: flex;
     align-items: center;

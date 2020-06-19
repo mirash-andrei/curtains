@@ -117,6 +117,9 @@ button:focus {
   background-repeat: no-repeat;
   background-position-y: center;
   height: 632px;
+  @media (max-width: 500px) {
+    height: 530px;
+  }
 
   .label {
     margin-top: 58px;
