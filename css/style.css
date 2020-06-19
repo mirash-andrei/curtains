@@ -344,9 +344,9 @@ button:focus {
   width: 225px;
   height: 50px;
   padding: 1px; }
-  .services-description .btn-gradient:hover div {
+  .services-description .btn-gradient:hover div, .services-description .btn-gradient:focus div {
     background: linear-gradient(90deg, #0B90BD 0%, #3FB8B1 97.69%); }
-    .services-description .btn-gradient:hover div span {
+    .services-description .btn-gradient:hover div span, .services-description .btn-gradient:focus div span {
       background: white;
       color: white;
       -webkit-background-clip: text;
@@ -396,6 +396,9 @@ button:focus {
 .services {
   margin-bottom: 15px;
   overflow: hidden; }
+  @media (max-width: 500px) {
+    .services {
+      text-align: center; } }
   .services .container {
     box-shadow: 600px 0px 0px 0px rgba(255, 255, 255, 0.63); }
   .services h2 {
@@ -441,6 +444,9 @@ button:focus {
   .services .swiper-services .swiper-button-disabled {
     box-shadow: none; }
 
+@media (max-width: 500px) {
+  .more-services {
+    text-align: center; } }
 .more-services .more-services-slider, .more-services .services-description {
   margin-bottom: 60px; }
 @media (max-width: 991.98px) {
@@ -451,6 +457,9 @@ button:focus {
   top: 55px;
   position: relative;
   background: url("../img/photo-printing.png"); }
+  @media (max-width: 500px) {
+    .photo-printing {
+      text-align: center; } }
   .photo-printing .col-lg-7 {
     position: relative;
     background: white;
@@ -459,6 +468,9 @@ button:focus {
     padding: 73px 111px 59px 57px;
     box-shadow: 0px 4px 20px rgba(116, 131, 148, 0.35);
     border-radius: 10px; }
+    @media (max-width: 500px) {
+      .photo-printing .col-lg-7 {
+        padding: 20px; } }
     .photo-printing .col-lg-7 h2 {
       font-weight: bold;
       font-size: 26px;
@@ -567,6 +579,9 @@ button:focus {
         background-position-x: right;
         background-repeat: no-repeat;
         z-index: -1; } }
+    @media (max-width: 500px) {
+      .advantages:before {
+        display: none; } }
   .advantages h2 {
     font-weight: bold;
     font-size: 32px;
@@ -728,6 +743,10 @@ button:focus {
 .contacts {
   position: relative;
   height: 560px; }
+  @media (max-width: 500px) {
+    .contacts {
+      text-align: center;
+      height: auto; } }
   .contacts .container {
     z-index: 1; }
   .contacts .contacts-body {
@@ -736,6 +755,9 @@ button:focus {
     z-index: 1;
     margin-top: 100px;
     padding: 51px 33px 59px 67px; }
+    @media (max-width: 500px) {
+      .contacts .contacts-body {
+        padding: 20px; } }
     .contacts .contacts-body h2 {
       font-weight: bold;
       font-size: 28px;
@@ -759,6 +781,10 @@ button:focus {
     top: 0;
     width: 100%;
     height: 560px; }
+    @media (max-width: 500px) {
+      .contacts #map {
+        position: relative;
+        height: 400px; } }
 
 footer {
   display: flex;
@@ -787,14 +813,23 @@ footer {
     footer .col-md-3 {
       display: flex;
       justify-content: space-between; } }
+  @media (max-width: 500px) {
+    footer .col-md-3 {
+      flex-wrap: wrap;
+      justify-content: center; }
+      footer .col-md-3 a {
+        width: 100%;
+        text-align: center; } }
 
 .modal .form-control {
   background: #FFFFFF;
   border: 1px solid rgba(92, 121, 162, 0.15);
   border-radius: 60px;
   height: 50px;
-  width: 432px;
+  width: 100%;
   margin-bottom: 20px; }
+.modal .btn-gradient {
+  min-width: 180px; }
 
 @keyframes pulse {
   0% {
