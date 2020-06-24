@@ -164,129 +164,14 @@ button:focus {
     position: relative;
     height: 300px;
     background: #0B90BD;
-    background-image: url("../img/swipers-baners.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
     border-radius: 10px; }
     @media (max-width: 991.98px) {
       .slider .swiper-banners {
-        background-position-x: 10px;
         height: auto; } }
-    .slider .swiper-banners:before {
-      content: '';
-      position: absolute;
-      right: 45px;
-      bottom: 0px;
-      width: 277px;
-      height: 254px;
-      background: url("../img/telochka.png"); }
-      @media (max-width: 500px) {
-        .slider .swiper-banners:before {
-          display: none; } }
-    .slider .swiper-banners .swiper-slide {
-      padding: 24px 70px; }
-      .slider .swiper-banners .swiper-slide .label-top {
-        font-weight: 600;
-        font-size: 14px;
-        color: #FFB513;
-        text-transform: uppercase;
-        position: relative;
-        padding-left: 25px;
-        line-height: 21px; }
-        .slider .swiper-banners .swiper-slide .label-top:before {
-          content: '';
-          position: absolute;
-          left: 0px;
-          bottom: 0px;
-          width: 21px;
-          height: 21px;
-          background: url("../img/sun.svg"); }
-      .slider .swiper-banners .swiper-slide h3 {
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 24px;
-        color: white;
-        margin-top: 25px;
-        margin-bottom: 31px; }
-        @media (max-width: 991.98px) {
-          .slider .swiper-banners .swiper-slide h3 {
-            margin-top: 10px;
-            margin-bottom: 10px; } }
-        @media (max-width: 767.98px) {
-          .slider .swiper-banners .swiper-slide h3 {
-            font-size: 25px;
-            line-height: 30px; } }
-      .slider .swiper-banners .swiper-slide .old-price {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        text-decoration-line: line-through;
-        color: rgba(147, 167, 193, 0.7); }
-        .slider .swiper-banners .swiper-slide .old-price span {
-          font-size: 18px;
-          line-height: 25px; }
-      .slider .swiper-banners .swiper-slide .new-price {
-        font-size: 48px;
-        line-height: 48px;
-        color: white; }
-        .slider .swiper-banners .swiper-slide .new-price span {
-          font-size: 36px;
-          line-height: 25px; }
-      .slider .swiper-banners .swiper-slide .right-text {
-        padding-top: 23px;
-        color: rgba(255, 255, 255, 0.69);
-        font-size: 14px;
-        line-height: 24px; }
-        .slider .swiper-banners .swiper-slide .right-text span {
-          font-weight: bold;
-          font-size: 16px; }
-      .slider .swiper-banners .swiper-slide .colors-count {
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 24px;
-        text-transform: uppercase;
-        color: #E4DAD0;
-        margin-top: 15px;
-        margin-bottom: 6px; }
-      .slider .swiper-banners .swiper-slide .color-item {
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 24px;
-        display: flex;
-        align-items: center;
-        color: rgba(255, 255, 255, 0.69);
-        margin-right: 4px; }
-        @media (max-width: 767.98px) {
-          .slider .swiper-banners .swiper-slide .color-item {
-            font-size: 10px;
-            width: 50%;
-            margin-right: 0; } }
-        @media (max-width: 550.98px) {
-          .slider .swiper-banners .swiper-slide .color-item {
-            width: 100%;
-            margin-top: 10px; } }
-        .slider .swiper-banners .swiper-slide .color-item .color-swatch {
-          width: 38px;
-          height: 38px;
-          border-radius: 50%;
-          border: 4px solid rgba(255, 255, 255, 0.3);
-          margin-right: 3px; }
-          .slider .swiper-banners .swiper-slide .color-item .color-swatch div {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%; }
-          .slider .swiper-banners .swiper-slide .color-item .color-swatch .burgundy {
-            background: #960000; }
-          .slider .swiper-banners .swiper-slide .color-item .color-swatch .pink {
-            background: #FF7070; }
-          .slider .swiper-banners .swiper-slide .color-item .color-swatch .beige {
-            background: #FFE3C1; }
-          .slider .swiper-banners .swiper-slide .color-item .color-swatch .white {
-            background: white; }
+    .slider .swiper-banners .swiper-container {
+      height: 100%; }
+      .slider .swiper-banners .swiper-container .swiper-wrapper {
+        height: 100%; }
     .slider .swiper-banners .swiper-button-next {
       right: -25px !important; }
       @media (max-width: 768px) {
@@ -382,11 +267,17 @@ button:focus {
   left: 28px !important;
   top: unset;
   right: unset; }
+  @media (min-width: 768px) {
+    .swiper-services .swiper-button-prev {
+      bottom: 33px !important; } }
 .swiper-services .swiper-button-next {
   bottom: 13px !important;
   left: 88px !important;
   top: unset;
   right: unset; }
+  @media (min-width: 768px) {
+    .swiper-services .swiper-button-next {
+      bottom: 33px !important; } }
 .swiper-services .swiper-button-disabled {
   opacity: 1 !important;
   background: none !important; }
@@ -397,6 +288,9 @@ button:focus {
   top: unset;
   right: unset;
   z-index: 100; }
+  @media (min-width: 768px) {
+    .swiper-services .swiper-pagination {
+      bottom: 45px !important; } }
 
 .services {
   margin-bottom: 15px;
@@ -405,7 +299,16 @@ button:focus {
     .services {
       text-align: center; } }
   .services .container {
-    box-shadow: 600px 0px 0px 0px rgba(255, 255, 255, 0.63); }
+    position: relative; }
+    .services .container:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      box-shadow: inset -300px 0px 300px -3px rgba(255, 255, 255, 0.64);
+      height: 100%;
+      width: 400px;
+      right: -400px;
+      z-index: 20; }
   .services h2 {
     font-weight: 800;
     font-size: 32px;
@@ -441,7 +344,8 @@ button:focus {
     overflow: visible !important; }
   .services .swiper-services .swiper-slide img {
     width: 100%;
-    max-height: 331px; }
+    max-height: 331px;
+    border-right: 6px; }
   .services .swiper-services .swiper-button-prev {
     box-shadow: 0px 8px 20px rgba(214, 222, 226, 0.42); }
   .services .swiper-services .swiper-button-next {

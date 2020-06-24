@@ -105,4 +105,19 @@ $(document).ready(function () {
         $(".product").mask("a*-999-a999");
         $(".eyescript").mask("~9.99 ~9.99 999");
     });
+
+    const anchors = document.querySelectorAll('a[href*="#"]')
+
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+
+            const blockID = anchor.getAttribute('href').substr(1)
+
+            document.getElementById(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    }
 });

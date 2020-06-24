@@ -205,156 +205,14 @@ button:focus {
     position: relative;
     height: 300px;
     background: #0B90BD;
-    background-image: url("../img/swipers-baners.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
     border-radius: 10px;
     @media (max-width: 991.98px) {
-      background-position-x: 10px;
       height: auto;
     }
-
-    &:before {
-      content: '';
-      position: absolute;
-      right: 45px;
-      bottom: 0px;
-      width: 277px;
-      height: 254px;
-      background: url("../img/telochka.png");
-      @media (max-width: 500px) {
-        display: none;
-      }
-    }
-
-    .swiper-slide {
-      padding: 24px 70px;
-
-      .label-top {
-        font-weight: 600;
-        font-size: 14px;
-        color: #FFB513;
-        text-transform: uppercase;
-        position: relative;
-        padding-left: 25px;
-        line-height: 21px;
-
-        &:before {
-          content: '';
-          position: absolute;
-          left: 0px;
-          bottom: 0px;
-          width: 21px;
-          height: 21px;
-          background: url("../img/sun.svg");
-        }
-      }
-
-      h3 {
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 24px;
-        color: white;
-        margin-top: 25px;
-        margin-bottom: 31px;
-
-        @media (max-width: 991.98px) {
-          margin-top: 10px;
-          margin-bottom: 10px;
-        }
-
-        @media (max-width: 767.98px) {
-          font-size: 25px;
-          line-height: 30px;
-        }
-      }
-
-      .old-price {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        text-decoration-line: line-through;
-        color: rgba(147, 167, 193, 0.7);
-        span {
-          font-size: 18px;
-          line-height: 25px;
-        }
-      }
-      .new-price {
-        font-size: 48px;
-        line-height: 48px;
-        color: white;
-        span {
-          font-size: 36px;
-          line-height: 25px;
-        }
-      }
-
-      .right-text {
-        padding-top: 23px;
-        color: rgba(255, 255, 255, 0.69);
-        font-size: 14px;
-        line-height: 24px;
-        span {
-          font-weight: bold;
-          font-size: 16px;
-        }
-      }
-      .colors-count {
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 24px;
-        text-transform: uppercase;
-        color: #E4DAD0;
-        margin-top: 15px;
-        margin-bottom: 6px;
-      }
-
-      .color-item {
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 24px;
-        display: flex;
-        align-items: center;
-        color: rgba(255, 255, 255, 0.69);
-        margin-right: 4px;
-        @media (max-width: 767.98px) {
-          font-size: 10px;
-          width: 50%;
-          margin-right: 0;
-        }
-        @media (max-width: 550.98px) {
-          width: 100%;
-          margin-top: 10px;
-        }
-        .color-swatch {
-          width: 38px;
-          height: 38px;
-          border-radius: 50%;
-          border: 4px solid rgba(255, 255, 255, 0.3);
-          margin-right: 3px;
-          div {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-          }
-          .burgundy {
-            background: #960000;
-          }
-          .pink {
-            background: #FF7070;
-          }
-          .beige {
-            background: #FFE3C1;
-          }
-          .white {
-            background: white;
-          }
-        }
+    .swiper-container {
+      height: 100%;
+      .swiper-wrapper {
+        height: 100%;
       }
     }
 
@@ -487,6 +345,9 @@ button:focus {
     left: 28px !important;
     top: unset;
     right: unset;
+    @media (min-width: 768px) {
+      bottom: 33px !important;
+    }
   }
 
   .swiper-button-next {
@@ -494,6 +355,9 @@ button:focus {
     left: 88px !important;
     top: unset;
     right: unset;
+    @media (min-width: 768px) {
+      bottom: 33px !important;
+    }
   }
 
   .swiper-button-disabled {
@@ -508,6 +372,9 @@ button:focus {
     top: unset;
     right: unset;
     z-index: 100;
+    @media (min-width: 768px) {
+      bottom: 45px !important;
+    }
   }
 
 }
@@ -519,7 +386,17 @@ button:focus {
     text-align: center;
   }
   .container {
-    box-shadow: 600px 0px 0px 0px rgba(255, 255, 255, 0.63);
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      box-shadow: inset -300px 0px 300px -3px rgba(255, 255, 255, 0.64);
+      height: 100%;
+      width: 400px;
+      right: -400px;
+      z-index: 20;
+    }
   }
 
   h2 {
@@ -574,6 +451,7 @@ button:focus {
       img {
         width: 100%;
         max-height: 331px;
+        border-right: 6px;
       }
     }
 
