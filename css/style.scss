@@ -206,9 +206,7 @@ button:focus {
     height: 300px;
     background: #0B90BD;
     border-radius: 10px;
-    @media (max-width: 991.98px) {
-      height: auto;
-    }
+
     .swiper-container {
       height: 100%;
       .swiper-wrapper {
