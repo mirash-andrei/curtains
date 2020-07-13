@@ -7,7 +7,10 @@ header {
       text-align: center; }
       header .mb-1 {
         margin-top: 10px;
-        margin-bottom: 10px !important; } }
+        margin-bottom: 10px !important;
+        color: #383838; }
+        header .mb-1:hover {
+          color: #383838; } }
   header .btn-gradient {
     width: 100%; }
   header .col-lg-2 svg {
@@ -170,12 +173,12 @@ button:focus {
       right: -25px !important; }
       @media (max-width: 768px) {
         .slider .swiper-banners .swiper-button-next {
-          right: 0 !important; } }
+          display: none; } }
     .slider .swiper-banners .swiper-button-prev {
       left: -25px !important; }
       @media (max-width: 768px) {
         .slider .swiper-banners .swiper-button-prev {
-          left: 0 !important; } }
+          display: none; } }
 
 .services-description h3, .services-description p {
   color: #373737; }
@@ -285,6 +288,9 @@ button:focus {
   @media (min-width: 768px) {
     .swiper-services .swiper-pagination {
       bottom: 45px !important; } }
+  @media (max-width: 768px) {
+    .swiper-services .swiper-pagination {
+      display: none; } }
 
 .services {
   margin-bottom: 15px;

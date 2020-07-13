@@ -10,6 +10,10 @@ header {
     .mb-1 {
       margin-top: 10px;
       margin-bottom: 10px !important;
+      color: $black;
+      &:hover {
+        color: $black;
+      }
     }
   }
 
@@ -215,14 +219,14 @@ button:focus {
     .swiper-button-next {
       right: -25px !important;
       @media (max-width: 768px) {
-        right: 0 !important;
+        display: none;
       }
     }
 
     .swiper-button-prev {
       left: -25px !important;
       @media (max-width: 768px) {
-        left: 0 !important;
+        display: none;
       }
     }
   }
@@ -370,6 +374,9 @@ button:focus {
     z-index: 100;
     @media (min-width: 768px) {
       bottom: 45px !important;
+    }
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 
