@@ -198,13 +198,11 @@ button:focus {
   position: relative;
   bottom: 150px;
   height: 150px;
-  @media (max-width: 767.98px) {
-    height: 400px;
-  }
+
   .swiper-banners {
     position: relative;
     height: 300px;
-    background: #0B90BD;
+    background: none;
     border-radius: 10px;
 
     .swiper-container {
